@@ -1,0 +1,25 @@
+<div class="product-detail">
+    <!-- Product Title, Price, and Rating -->
+    <h1>{{ product.name }}</h1>
+    <p class="price">{{ product.price  }}</p>
+    <div class="rating">⭐⭐⭐⭐☆</div>
+  
+    <!-- Product Images -->
+    <div class="images">
+      <img *ngFor="let img of product.images" [src]="img" alt="{{ product.name }}" />
+    </div>
+
+
+    <!-- Product Variants and Add to Cart -->
+    <div class="variants">
+      <button *ngFor="let color of product.colors" (click)="selectColor(color)">{{ color }}</button>
+    </div>
+    <button (click)="addToCart()">Add to Cart</button>
+  
+    <!-- Product Description -->
+    <div class="description">
+      <h2>Description</h2>
+      <p>{{ product.description }}</p>
+    </div>
+  </div>
+  

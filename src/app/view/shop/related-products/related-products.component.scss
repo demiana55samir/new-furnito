@@ -1,0 +1,33 @@
+.related-products {
+    padding: 1rem;
+  }
+  
+  .product-list {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 4px;
+    width: 150px;
+    text-align: center;
+  }
+  
+  .product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .sale-price {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .regular-price {
+    color: #333;
+  }
+  

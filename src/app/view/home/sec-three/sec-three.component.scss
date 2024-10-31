@@ -1,0 +1,104 @@
+.con{
+    background-color: #FCF8F3;
+    margin-top: 30px;
+     padding: 15px;
+}
+
+.btn{
+    border: 1px solid  #B88E2F;
+                border-radius: 0%;
+                color: white;
+                padding-left: 50px;
+                padding-right: 50px;
+                background-color:  #B88E2F;
+                margin: 10px;
+}
+
+/* owl-carousel.component.scss */
+
+// .container {
+//     margin-top: 20px;
+//   }
+  
+  .owl-carousel .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    width: 330px !important;
+  }
+//   ::ng-deep{
+//     .owl-item{
+//     width:330px !important;
+//     }
+//     }
+//   .owl-item{
+//     width: 330px !important;
+//   }
+  .card {
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .card-body {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .card-body img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .card-title {
+    margin-top: 15px;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  /* Owl Carousel custom navigation styles */
+  .owl-nav button.owl-prev,
+  .owl-nav button.owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #555;
+  }
+  
+  .owl-nav button.owl-prev {
+    left: -25px;
+  }
+  
+  .owl-nav button.owl-next {
+    right: -25px;
+  }
+  
+  .owl-nav button.owl-prev:hover,
+  .owl-nav button.owl-next:hover {
+    color: #000;
+  }
+  
+  /* Owl Carousel pagination styles */
+  .owl-dots .owl-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+    background: #ddd;
+    border-radius: 50%;
+    transition: background 0.3s;
+  }
+  
+  .owl-dots .owl-dot.active {
+    background: #555;
+  }
+  

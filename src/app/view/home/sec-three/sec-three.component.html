@@ -1,0 +1,32 @@
+<div class="container mt-5">
+  <div class="row">
+    <!-- Left Column (Text) -->
+    <div class="col-12 col-md-4 mt-3 d-flex flex-column ms-0 ms-md-5 justify-content-center">
+      <h1>50+ Beautiful Room Inspiration</h1>
+      <p>Our designers have created many beautiful room prototypes to inspire you.</p>
+      <button class="btn btn-light">Show More</button>
+    </div>
+
+    <!-- Right Column (Carousel Slider) -->
+    <div class="col-12 col-md-6 ms-5">
+      <owl-carousel-o [options]="customOptions" style="width: 350px !important;">
+        <ng-container *ngFor="let slide of slides" class="w-md-auto w-75 me-0 pe-0 " >
+          <ng-template  carouselSlide [id]="slide.id" style="width: 350px !important;" >
+            <div class="owl-item w-md-auto w-75 me-0 pe-0 " style="width: 350px !important;">
+              <div class="card">
+                <div class="card-body ">
+                  <img [src]="slide.image" [alt]="slide.title">
+                  <hr />
+                  <h5 class="card-title text-center">{{ slide.title }}</h5>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
+      
+    </div>
+  </div>
+</div>
+
+

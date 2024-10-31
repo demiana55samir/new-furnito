@@ -1,0 +1,12 @@
+<div class="card position-relative">
+    <div *ngIf="discount" class="discount">{{ card.discount }}</div>
+    <img [src]="card.image" alt="Card image cap" class="card-img-top rounded mx-auto d-block">
+    <div class="card-body">
+      <h5 class="card-title">{{ card.title }}</h5>
+      <p class="card-text text-secondary">{{ card.description }}</p>
+      <span class="card-text">{{ card.price }}</span>
+      <span *ngIf="originalPrice" class="card-text ms-4 text-decoration-line-through text-secondary">
+        {{ card.originalPrice }}</span>
+    </div>
+  </div>
+  

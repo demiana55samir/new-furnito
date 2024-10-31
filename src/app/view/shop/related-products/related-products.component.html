@@ -1,0 +1,9 @@
+<div class="related-products">
+    <h2>Related Products</h2>
+    <div *ngFor="let related of relatedProducts" class="related-item">
+      <img [src]="related.imageUrl" alt="{{ related.name }}" />
+      <p>{{ related.name }}</p>
+      <p>{{ related.price  }}</p>
+    </div>
+  </div>
+  

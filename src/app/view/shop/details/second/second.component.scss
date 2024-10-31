@@ -1,0 +1,30 @@
+.tex{
+    color: #9F9F9F;
+}
+.img{
+    background-color: #F9F1E7;
+    border-radius: 5px;
+
+    @media (max-width: 768px) {
+        width: 250px;
+        height: 250px;
+        object-fit:contain;
+      }
+
+   
+}
+
+.title{
+    justify-content: center !important;
+    @media (max-width: 768px) {
+        justify-content:unset !important;
+        // font-size: 250px;
+      }
+}
+
+.images{
+    @media (max-width: 768px) {
+        // justify-content: center;
+        // margin-left: 60px;
+      }
+}

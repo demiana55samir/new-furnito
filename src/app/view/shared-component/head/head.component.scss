@@ -1,0 +1,52 @@
+.bg{
+    min-width: 100%;
+    max-width: 200%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+
+}
+.background-image{
+  object-fit:cover;
+  object-position: 18%;
+}
+.num{
+  border: 0 solid white; 
+        background-color: white;
+         color: grey;
+         width:40px
+}
+.default{
+  border: 0 solid white; 
+            background-color: white;
+            color: grey;
+            width: 90px
+}
+img{
+  opacity: 1;
+  // object-fit: fill;
+    height: 400px;
+    max-width: 300%;
+    min-width: 100%;
+    position: relative;
+    
+}
+
+.hel {
+    position: absolute;
+    // top: 33%;
+    // left: 36%;
+  
+    @media (max-width: 768px) {
+      // left: 25%;
+    }
+}  
+.log{
+    height: 70px; 
+    max-width: 50%; 
+    min-width: 25%; 
+}

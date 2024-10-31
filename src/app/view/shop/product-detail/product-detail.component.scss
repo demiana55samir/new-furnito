@@ -1,0 +1,113 @@
+/* General styling for the product detail container */
+.product-detail {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Product Title */
+  .product-detail h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  /* Price Styling */
+  .product-detail .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff6b6b;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Rating Styling */
+  .product-detail .rating {
+    font-size: 1.2rem;
+    color: #ffd700; /* Gold color for the stars */
+    margin-bottom: 1rem;
+  }
+  
+  /* Product Images Section */
+  .product-detail .images {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
+  }
+  
+  .product-detail .images img {
+    width: 120px;
+    height: auto;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .product-detail .images img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Product Variants (e.g., color options) */
+  .product-detail .variants {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .product-detail .variants button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-detail .variants button:hover {
+    background-color: #d0d0d0;
+  }
+  
+  .product-detail .variants button.active {
+    background-color: #ff6b6b;
+    color: white;
+  }
+  
+  /* Add to Cart Button */
+  .product-detail button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff6b6b;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 2rem;
+  }
+  
+  .product-detail button:hover {
+    background-color: #ff4a4a;
+  }
+  
+  /* Description Section */
+  .product-detail .description {
+    margin-top: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .product-detail .description h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .product-detail .description p {
+    color: #666;
+  }
+  

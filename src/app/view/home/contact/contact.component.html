@@ -1,0 +1,62 @@
+<app-head
+  [title]="'Contant'"
+  [breadcrumbText]="'Home'"
+  [breadcrumbLink]="'/home'"
+  [page]="'Contant'">
+</app-head>
+
+<div class="container d-flex flex-column justify-content-center align-content-center align-items-center">
+    <h1 class="mt-5">Get In Touch With Us</h1>
+    <p class="text-secondary mb-0">For More Information About Our Product & Services. Please Feel Free To Drop Us </p>
+     <p class="text-secondary mt-0">An Email.Our Staff Always Be There To Help You Out. Do Not Hesitate!</p>
+</div>
+
+<div class="container d-md-flex ">
+    <div class="col-md-4 col-12 d-flex flex-column ps-5 p-5">
+        <div class="d-flex">
+            <i class="bi bi-geo-alt-fill fs-2 p-3"></i>
+            <div class="w-50">
+                <h3>Address</h3>
+                <p>236 5th SE Avenue, New York NY10000, United States</p>
+            </div>
+        </div>
+        <div class="d-flex">
+            <i class="bi bi-telephone-fill fs-2 p-3"></i>
+            <div class="w-50">
+                <h3>Phone</h3>
+                <p>Mobile: +(84) 546-6789<br/>
+                    Hotline: +(84) 456-6789</p>
+            </div>
+        </div>
+        <div class="d-flex">
+            <i class="bi bi-clock-fill fs-2 p-3"></i>
+            <div class="w-50">
+                <h3>Working Time</h3>
+                <p>Monday-Friday: 9:00 - 22:00<br/>
+                    Saturday-Sunday: 9:00 - 21:00</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-12 d-flex flex-column p-5">
+        <div class="p-2">
+            <label for="" class="form-label fw-bold">Your Name</label>
+            <input type="text" placeholder="Abc@def.com" class="form-control p-3 me-5">
+        </div>
+        <div class="p-2">
+            <label for="" class="form-label fw-bold">Email address</label>
+            <input type="text" placeholder="Abc" class="form-control p-3 me-5">
+        </div>
+        <div class="p-2">
+            <label for="" class="form-label fw-bold">Subject</label>
+            <input type="text" placeholder="This is an optional" class="form-control p-3 me-5">
+        </div>
+        <div class="p-2">
+            <label for="" class="form-label fw-bold">Message</label>
+            <input type="text" placeholder="Hi! i’d like to ask about" class="form-control p-5 me-5">
+        </div>
+        <button class="btn p-2 ms-3 mt-3"> Submit </button>
+    </div>
+    <div class="col-md-2 col-12 d-flex flex-column pe-5 ps-4"></div>
+</div>
+
+<app-reward></app-reward>

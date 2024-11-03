@@ -19,7 +19,7 @@ import { RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
   ],
   exports:[
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
   ]
 })
 export class LayoutModule { }

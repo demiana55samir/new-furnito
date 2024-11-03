@@ -13,6 +13,7 @@ import { ThirdComponent } from './details/third/third.component';
 import { DetailsComponent } from './details/details.component';
 import { RouterLink } from '@angular/router';
 import { CartService } from '../../core/services/cartService';
+import { ShopPageComponent } from './shop-page/shop-page.component';
 
 
 
@@ -27,6 +28,7 @@ import { CartService } from '../../core/services/cartService';
     CheckoutComponent,
     ProductComparisonComponent,
     CartComponent,
+    ShopPageComponent
     
   ],
   imports: [
@@ -35,6 +37,9 @@ import { CartService } from '../../core/services/cartService';
     SharedComponentModule,
     ShopRoutingModule,
 
+  ],
+  exports:[
+    ShopRoutingModule
   ]
 })
 export class ShopModule { }

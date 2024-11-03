@@ -13,13 +13,11 @@ interface RelatedProduct {
 
 @Component({
   selector: 'app-related-products',
-  // standalone: true,
-  // imports: [CommonModule],
   templateUrl: './related-products.component.html',
   styleUrl: './related-products.component.scss'
 })
 export class RelatedProductsComponent {
-  @Input() currentProductId!: number; // ID of the currently viewed product
+  @Input() currentProductId!: number; 
   relatedProducts: RelatedProduct[] = [];
 
   constructor(private productService: ProductService) {}
@@ -28,7 +26,6 @@ export class RelatedProductsComponent {
     this.loadRelatedProducts();
   }
 
-  // Method to load related products based on the current product ID
   loadRelatedProducts(): void {
     this.productService.getRelatedProducts(this.currentProductId)
       .subscribe((products: RelatedProduct[]) => {

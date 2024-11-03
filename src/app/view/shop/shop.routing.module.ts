@@ -5,6 +5,7 @@ import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { ProductComparisonComponent } from './product-comparison/product-comparison.component';
 import { RelatedProductsComponent } from './related-products/related-products.component';
+import { ShopPageComponent } from './shop-page/shop-page.component';
 
 const routes: Routes = [
 
@@ -19,7 +20,7 @@ const routes: Routes = [
         },
         {
           path: 'shop',
-          component:ShopComponent
+          component:ShopPageComponent 
         },
         {
           path: 'cart',

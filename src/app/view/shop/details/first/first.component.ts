@@ -20,7 +20,7 @@ export class FirstComponent {
       this.count--;
     }
   }
-  cover = "Asgaard .png";
+  cover = "../../../../assets/Asgaard .png";
 
   changeImage(newImage: string): void {
     this.cover = newImage;

@@ -1,23 +1,53 @@
-<app-head
-  [title]="'Cart'"
-  [breadcrumbText]="'Home'"
-  [breadcrumbLink]="'/cart'"
-  [page]="'Cart'">
+<app-head 
+ [title]="'Cart'"
+ [breadcrumbText]="'Home'" 
+ [breadcrumbLink]="'/cart'" 
+ [page]="'Cart'">
 </app-head>
 
-
-
-
-
-<!-- <div class="cart" *ngIf="cartVisible">
-    <h2 style="margin-top: 500px;">Shopping Cart</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fuga aliquam. Asperiores quo magni saepe voluptatibus delectus quae perspiciatis voluptas ad obcaecati placeat, minus sapiente amet vero sunt consectetur excepturi.</p>
-    <ul>
-      <li *ngFor="let item of cartItems">
-        {{ item.name }} - {{ item.price  }}
-        <button (click)="removeFromCart(item)">Remove</button>
-      </li>
-    </ul>
-    <p>Subtotal: {{ subtotal }}</p>
+<div class="container d-md-flex">
+  <div class="col-md-8 col-12">
+    <div class=" tit d-flex p-2 ps-5 pe-0 m-2">
+     <p class=" col-3 ">Product</p>
+     <p class=" col-3 ">Price</p>
+     <p class=" col-3">Quantity</p>
+     <p class=" col-3 ">Subtotal</p>
+    </div>
+ 
+    <div *ngFor="let item of cartItems" class="d-flex ">
+      <div class="d-md-flex col-3">
+        <img [src]="item.image" class="mt-2 w-md-auto w-75 h-md-auto h-75" alt="img">
+        <p class="color0 mt-5 ms-md-3">{{ item.name }}</p>
+      </div>
+      <div class="color0 col-3  mt-5 ms-4">
+        Rs. {{ item.price | number }}
+      </div>
+      <div class="col-3 mt-5 ">
+        <button class="btn btn-secondary bg-white text-dark p-2 ms-4">
+          {{ item.quantity }}
+        </button>
+      </div>
+      <div class="col-3 mt-5  ms-md-2 d-md-flex">
+       <p > Rs. {{ item.subtotal | number }} </p>
+        <i class="icon bi bi-trash3-fill ms-md-3 " (click)="deleteItem(item.id)"></i>
+      </div>
+    </div>
   </div>
-   -->
+
+
+
+  <div class="tit col-md-4 col-12 d-flex flex-column justify-content-center align-items-center pt-5 pb-5">
+   <h2>Cart Totals</h2>
+   <div class="d-flex ">
+    <p class="m-3">Subtotal</p>
+    <p class="m-3 text-secondary">Rs. 250,000.00</p>
+   </div>
+   <div class="d-flex ">
+    <p class="m-3">total</p>
+    <p class="tit1 m-3 fw-bold">Rs. 250,000.00</p>
+   </div>
+   <button class="btn p-2 mt-3">Checkout</button>
+  </div>
+</div>
+
+<app-reward></app-reward>

@@ -5,6 +5,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { BlogComponent } from './blog/blog.component';
 import { HeaderComponent } from './header/header.component';
+import { HomePageComponent } from './homepage/homepage.component';
 
  const routes: Routes = [
   {
@@ -14,12 +15,13 @@ import { HeaderComponent } from './header/header.component';
       { path: '', redirectTo: 'home', pathMatch: 'full' },
       {
         path: 'home',
-        component: HomeComponent,
+        component: HomePageComponent,
       },
       { 
         path: 'about', 
         component: AboutComponent 
       },
+
       { 
         path: 'contact', 
         component: ContactComponent 

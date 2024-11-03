@@ -5,11 +5,11 @@ import { Routes} from '@angular/router';
 export const routes: Routes = [
   { 
     path: '', 
-    redirectTo: 'home',
+    redirectTo: 'main',
     pathMatch: 'full' 
     },
   { 
-     path: 'home',
+     path: 'main',
     
      loadChildren: () => 
         

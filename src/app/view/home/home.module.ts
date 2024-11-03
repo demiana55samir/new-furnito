@@ -13,6 +13,7 @@ import { SecTwoComponent } from './sec-two/sec-two.component';
 import { SecThreeComponent } from './sec-three/sec-three.component';
 import { SecFourComponent } from './sec-four/sec-four.component';
 import { HomeComponent } from './home.component';
+import { HomePageComponent } from './homepage/homepage.component';
 
 
 
@@ -26,7 +27,8 @@ import { HomeComponent } from './home.component';
     SecTwoComponent,
     SecThreeComponent,
     SecFourComponent,
-    HomeComponent
+    HomeComponent,
+    HomePageComponent
 
   ],
   imports: [
@@ -36,6 +38,9 @@ import { HomeComponent } from './home.component';
     RouterLink,
     CarouselModule,
     SharedComponentModule
+],
+exports:[
+  HomeRoutingModule
 ]
 })
 export class HomeModule { }

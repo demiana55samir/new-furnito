@@ -9,10 +9,10 @@ declare var $: any;
 export class SecThreeComponent{
 
   slides = [
-    { id:"1",image: 'image 1.png', title: 'Title 1' },
-    { id:'2',image: 'image 6.png', title: 'Title 2' },
-    { id:'3',image: 'image 3.png', title: 'Title 3' },
-    // { id:'4',image: 'image 1.png', title: 'Title 1' },
+    { id:"1",image: '../../../../assets/image 1.png', title: 'Title 1' },
+    { id:'2',image: '../../../../assets/image 6.png', title: 'Title 2' },
+    { id:'3',image: '../../../../assets/image 3.png', title: 'Title 3' },
+    // { id:'4',image: 'image 1.png', title: 'Title 4' },
     // { id:'5',image: 'image 2.png', title: 'Title 2' },
     // { id:'6',image: 'image 3.png', title: 'Title 3' },
     // { id:'7',image: 'image 1.png', title: 'Title 1' },

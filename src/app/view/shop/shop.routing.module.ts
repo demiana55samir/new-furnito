@@ -7,6 +7,9 @@ import { ProductComparisonComponent } from './product-comparison/product-compari
 import { RelatedProductsComponent } from './related-products/related-products.component';
 import { ShopPageComponent } from './shop-page/shop-page.component';
 
+
+
+
 const routes: Routes = [
 
     {

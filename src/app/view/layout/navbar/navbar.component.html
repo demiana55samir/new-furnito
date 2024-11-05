@@ -1,43 +1,92 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary bg-white fixed-top">
-    <div class="container d-flex " >   
-        <div class="d-flex flex-row " >
-            <img width="70" height="70" class="rounded-circle p-1" src="../../../../assets/logoo.png"/>
-            <a class="navbar-brand" routerLink='/home' routerLinkActive="router-link-active"  >
-              <h2 class="mt-2" >Funiro</h2></a>
-        </div>
+ <nav class="navbar navbar-expand-lg bg-white fixed-top">
+  
+  <div class="container d-flex">
 
-        <button class="navbar-toggler" type="button"
-        data-bs-toggle="collapse"
-         data-bs-target="#navbarSupportedContent" 
-         aria-controls="navbarSupportedContent"
-          aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav m-md-auto d-flex justify-content-center flex-column flex-md-row align-items-center">
-          <li class="nav-item" >
-            <a class="nav-link mr-5 text-dark" routerLink='main/home'>Home</a>
-          </li>
-          <li class="nav-item" >
-            <a class="nav-link pl-3 text-dark" routerLink='shop/shop' >Shop </a>
-          </li>
-          <li class="nav-item" >
-            <a class="nav-link pl-3 text-dark" routerLink='main/about' >About </a>
-          </li>
-          <li class="nav-item" >
-            <a class="nav-link pl-3 text-dark" routerLink='main/contact'>Contact </a>
-          </li>
-
-        </ul>
-        <ul class="nav col-md-4 justify-content-center list-unstyled d-flex me-center ">
-            <li class="bi bi-person-exclamation fs-3  p-3"></li>
-            <i class="bi bi-search fs-3  p-3"></i> 
-            <i class="bi bi-heart fs-3  p-3"></i>
-            <i class="bi bi-cart3 fs-3  p-3"></i>      
-        </ul>
-      </div>
+    <div class="d-flex flex-row align-items-center">
+      <img width="70" height="70" class="rounded-circle p-1" src="../../../../assets/logoo.png" alt="Logo" />
+      <a class="navbar-brand" routerLink='/home' routerLinkActive="router-link-active">
+        <h2 class="mt-2">Funiro</h2>
+      </a>
     </div>
-  </nav>
 
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-md-auto d-flex justify-content-center flex-column
+           flex-md-row align-items-center">
+        <li class="nav-item">
+          <a class="nav-link text-dark" routerLink='main/home'>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" routerLink='shop/shop'>Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" routerLink='main/about'>About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" routerLink='main/contact'>Contact</a>
+        </li>
+      </ul>
+
+      <ul class="nav col-md-4 d-flex justify-content-center list-unstyled ms-auto">
+        <li><i class="bi bi-person-exclamation fs-3 p-3" aria-label="Account"></i></li>
+        <li><i class="bi bi-search fs-3 p-3" aria-label="Search"></i></li>
+        <li><i class="bi bi-heart fs-3 p-3" aria-label="Wishlist"></i></li>
+        <button class="navbar-toggler0" type="button0" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+         <i class="bi bi-cart3 fs-3 p-3 " aria-label="Cart"></i>
+       </button>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+aria-labelledby="offcanvasNavbarLabel">
+ <div class="offcanvas-header d-flex justify-content-between">
+   <h5 class="offcanvas-title" id="offcanvasNavbarLabel"> Shopping Cart </h5>
+
+     <i class="btnclose bi bi-x "  data-bs-dismiss="offcanvas" ></i>
+ </div>
  
+ <div class="offcanvas-body flex-column">
+  <hr>
+   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mb-5 pb-5">
+     <li class="cart-item d-flex align-items-center mb-3">
+       <img src="../../../../assets/Asgaard sofa 5.png" class="cart-item-img rounded" alt="Asgaard sofa">
+       <div class="ms-3 flex-grow-1">
+         <p class="cart-item-title mb-1">Asgaard sofa</p>
+         <p class="cart-item-price text-muted">1 x <span class="tit"> Rs. 250,000.00</span></p>
+       </div>
+       <i class="btnclose bi bi-x"></i>
+     </li>
+
+     <li class="cart-item d-flex align-items-center mb-3">
+       <img src="../../../../assets/Group 146.png" class="cart-item-img rounded" alt="Casivaling Wood">
+       <div class="ms-3 flex-grow-1">
+         <p class="cart-item-title mb-1">Casivaling Wood</p>
+         <p class="cart-item-price text-muted">1 x <span class="tit">Rs. 270,000.00</span></p>
+       </div>
+         <i class="btnclose bi bi-x"></i>
+     </li>
+   </ul>
+   <div class="cart-subtotal d-flex justify-content-between align-items-center mt-5 pt-5">
+     <strong>Subtotal</strong>
+     <span class="subtotal-amount text-danger tit">Rs. 520,000.00</span>
+   </div>
+   <hr>
+   <div class="d-flex justify-content-between mt-4">
+     <button class="btn cartbtn btn-outline-secondary">Cart</button>
+     <button class="btn cartbtn btn-outline-secondary">Checkout</button>
+     <button class="btn cartbtn btn-outline-secondary">Comparison</button>
+   </div>
+ </div>
+</div>
+
+
+  

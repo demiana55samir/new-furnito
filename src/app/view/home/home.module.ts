@@ -14,6 +14,7 @@ import { SecThreeComponent } from './sec-three/sec-three.component';
 import { SecFourComponent } from './sec-four/sec-four.component';
 import { HomeComponent } from './home.component';
 import { HomePageComponent } from './homepage/homepage.component';
+import { DetailsComponent } from '../shared-component/details/details.component';
 
 
 

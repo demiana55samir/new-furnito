@@ -4,6 +4,10 @@ import { HeadComponent } from './head/head.component';
 import { RewardComponent } from './reward/reward.component';
 import { CardsComponent } from './cards/cards.component';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { DetailsComponent } from './details/details.component';
+import { FirstComponent } from './details/first/first.component';
+import { SecondComponent } from './details/second/second.component';
+import { ThirdComponent } from './details/third/third.component';
 
 
 
@@ -12,6 +16,11 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
     HeadComponent,
     RewardComponent,
     CardsComponent,
+    DetailsComponent,
+    FirstComponent,
+    SecondComponent, 
+    ThirdComponent,
+
   ],
   imports: [
     CommonModule,
@@ -22,7 +31,11 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   exports:[
     RewardComponent,
     CardsComponent,
-    HeadComponent
+    HeadComponent,
+    DetailsComponent,
+    FirstComponent,
+    SecondComponent, 
+    ThirdComponent,
   ]
 })
 export class SharedComponentModule { }

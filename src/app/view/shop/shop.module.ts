@@ -7,10 +7,10 @@ import { ShopComponent } from './shop.component';
 import { CartComponent } from './cart/cart.component';
 import { ProductComparisonComponent } from './product-comparison/product-comparison.component';
 import { CheckoutComponent } from './checkout/checkout.component';
-import { FirstComponent } from './details/first/first.component';
-import { SecondComponent } from './details/second/second.component';
-import { ThirdComponent } from './details/third/third.component';
-import { DetailsComponent } from './details/details.component';
+import { FirstComponent } from '../shared-component/details/first/first.component';
+import { SecondComponent } from '../shared-component/details/second/second.component';
+import { ThirdComponent } from '../shared-component/details/third/third.component';
+import { DetailsComponent } from '../shared-component/details/details.component';
 import { RouterLink } from '@angular/router';
 import { CartService } from '../../core/services/cartService';
 import { ShopPageComponent } from './shop-page/shop-page.component';
@@ -20,11 +20,7 @@ import { ShopPageComponent } from './shop-page/shop-page.component';
 @NgModule({
   declarations: [
     ShopComponent,
-    HeadshopComponent, 
-    FirstComponent,
-    SecondComponent, 
-    ThirdComponent,  
-    DetailsComponent,
+    HeadshopComponent,   
     CheckoutComponent,
     ProductComparisonComponent,
     CartComponent,
@@ -34,7 +30,7 @@ import { ShopPageComponent } from './shop-page/shop-page.component';
   imports: [
     CommonModule,
     RouterLink,
-    SharedComponentModule,
+    SharedComponentModule ,
     ShopRoutingModule,
 
   ],
